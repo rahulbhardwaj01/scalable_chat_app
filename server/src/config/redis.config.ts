@@ -1,34 +1,31 @@
 ////////////////////////////////////////////////////////////
 //For local redis
 ////////////////////////////////////////////////////////////
-// import { Redis } from "ioredis";
+import { Redis } from "ioredis";
 
-// const redisClient = new Redis({
-//   host: process.env.REDIS_HOST,
-//   port: parseInt(process.env.REDIS_PORT),
-//   // password: process.env.REDIS_PASSWORD,
-// });
-
-// export default redisClient;
-
-//
-//
-////////////////////////////////////////////////////////////
-//
-//
-
-////////////////////////////////////////////////////////////
-//For Redis Cloud
-////////////////////////////////////////////////////////////
-import { createClient } from "redis";
-
-export const redisClient = createClient({
-  password: process.env.REDIS_CLOUD_PASSWORD,
-  socket: {
-    host: process.env.REDIS_CLOUD_HOST,
-    port: parseInt(process.env.REDIS_CLOUD_PORT),
-  },
+export const redisClient = new Redis({
+  host: "localhost",
+  port: 6379,
+  password: "mypassword",
 });
+//
+//
+////////////////////////////////////////////////////////////
+//
+//
+
+////////////////////////////////////////////////////////////
+// //For Redis Cloud
+// ////////////////////////////////////////////////////////////
+// import { createClient } from "redis";
+
+// export const redisClient = createClient({
+//   password: process.env.REDIS_CLOUD_PASSWORD,
+//   socket: {
+//     host: process.env.REDIS_CLOUD_HOST,
+//     port: parseInt(process.env.REDIS_CLOUD_PORT),
+//   },
+// });
 
 export const connectRedisClient = async () => {
   redisClient

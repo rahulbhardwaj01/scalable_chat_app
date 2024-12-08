@@ -20,7 +20,7 @@ export const kafka = new Kafka({
 });
 
 export const producer = kafka.producer();
-export const consumer = kafka.consumer({ groupId: process.env.KAFKA_GROUP_ID });
+export const consumer = kafka.consumer({ groupId: "chats"});
 
 export const connectKafka = async () => {
   try {
