@@ -14,18 +14,18 @@
 //
 //
 
+////////////////////////////////////////////////////////
+// For Redis Cloud
 //////////////////////////////////////////////////////////
-//For Redis Cloud
-////////////////////////////////////////////////////////////
-// import { createClient } from "redis";
+import { createClient } from "redis";
 
-// export const redisClient = createClient({
-//   password: process.env.REDIS_CLOUD_PASSWORD,
-//   socket: {
-//     host: process.env.REDIS_CLOUD_HOST,
-//     port: parseInt(process.env.REDIS_CLOUD_PORT),
-//   },
-// });
+export const redisClient = createClient({
+  password: process.env.REDIS_CLOUD_PASSWORD,
+  socket: {
+    host: process.env.REDIS_CLOUD_HOST,
+    port: parseInt(process.env.REDIS_CLOUD_PORT),
+  },
+});
 
 export const connectRedisClient = async () => {
   redisClient
