@@ -13,7 +13,7 @@ export default function Footer() {
           <div>© 2024 ChatBappa. All rights reserved.</div>
           <div className='flex items-center space-x-4 mt-6'>
             <Link
-              href='https://github.com/akash-d-dev'
+              href='https://github.com/rahulbhardwaj01'
               target='_blank'
               rel='noopener noreferrer'
             >

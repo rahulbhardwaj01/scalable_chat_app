@@ -18,8 +18,8 @@ export default function ChatBase({
   oldMessages: Array<ChatMessageType> | [];
 }) {
   const [open, setOpen] = useState(true);
-  const [chatUser, setChatUser] = useState<GroupChatUserType | null>(null);
   const [socket, setSocket] = useState<any>(null); // Socket instance
+  const [chatUser, setChatUser] = useState<GroupChatUserType | null>(null);
   const [isTyping, setIsTyping] = useState(false);
   const params = useParams();
 
