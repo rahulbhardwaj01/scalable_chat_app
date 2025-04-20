@@ -1,6 +1,6 @@
 # ChatBappa
 
-⚠ ChatBappa is hosted on a free web hosting platform, so it may take a while to start due to cold starts. Visit [https://scalable-nodejs-chat-app.onrender.com/] to check if the server is running.(You should get a page saying "It's working 🙌")
+⚠ ChatBappa is hosted on a free web hosting platform, so it may take a while to start due to cold starts. Visit [https://scalable-chat-app-79b1.onrender.com] to check if the server is running.(You should get a page saying "It's working 🙌")
 
 Home Page
 ![image](https://github.com/user-attachments/assets/72aa5106-178e-48dc-9c68-d1e197cbd8fd)
@@ -11,7 +11,7 @@ Chat Page
 
 
 Live Demo
-Check out the live version of ChatBappa: [Live Demo](https://scalable-nodejs-chat-app-client.vercel.app/)
+Check out the live version of ChatBappa: [Live Demo](https://scalable-chat-app-sand.vercel.app/)
 
 ChatBappa is a free real-time chatting application. You can create chat rooms and share them with anyone; people can join using just the room ID and passcode—no login or signup required.
 
