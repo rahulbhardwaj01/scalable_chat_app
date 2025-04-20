@@ -34,7 +34,7 @@ export async function fetchChatGroups(token: string) {
 export async function fetchChatGroup(id: string) {
   try {
     const res = await fetch(`${CHAT_GROUP_URL}/${id}`, {
-      cache: "no-cache",
+      cache: "no-cache",  //always fetch new details
       next: {
         revalidate: 60 * 60, // 1 hour
         tags: ["dashboard"],
